@@ -10,7 +10,7 @@ interface IProps {
 const ProjectItem = ({id, title, texts, img}: IProps) => {
     return (
         <div className="project_item">
-            <img src={img} alt="Chat App"/>
+            <Link href={`/project/${id}`}><img src={img} alt="Chat App"/></Link>
             <Link style={{color: "#000", textDecoration: "none"}} href={`/project/${id}`} className="texts">
                 <div className="title">{title}</div>
                 <p>{texts}</p>

@@ -34,16 +34,18 @@ const ProjectDetail = () => {
                 <section className="about">
                     <div className="title">About the project.</div>
                     <div className="text">
-                        <p>This web is used to save archive documents of all lecturers at Informatics Department, Hasanuddin University. Lecturers can see, upload, edit, and delete their documents,  so as the admin. Some data menu implements OCR feature and use the text extracted to automatically fill the form (the research title, year, teams, etc). This makes the user need not type the whole thing themselves while still make it customizable to them.</p> 
-                        <p>Another special feature is CV generator. Here, user can generate their CV easily based on the data they have in this system. The CV is produced in .docx format, allowing the user to customize it more to their preferences. The CV generator feature along with (Laravel) backend were developed by my partner.</p>
+                        {EachProjectData[id-1].about.map((p) => (
+                            <p>{p}</p>
+                        ))}
                     </div>
                 </section>
 
                 <section className="stacks">
                     <div className="title">Stacks I used<span>.</span></div>
                     <div className="texts">
-                        <div>Front-end : React-Next JS, TypeScript</div>
-                        <div>Back-end (OCR) : Flask, Python, Tesseract</div>
+                        {EachProjectData[id-1].stacks.map((s) => (
+                            <div>{s}</div>
+                        ))}
                     </div>
                 </section>
             </main>
