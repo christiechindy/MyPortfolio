@@ -4,7 +4,7 @@ import Linkedin_Icon from "@/assets/Linkedin_Icon"
 
 const Contact = () => {
     return (
-        <section className="contact">
+        <section id="contact_me" className="contact">
             <div className="title">Get in touch<span>.</span></div>
             <div className="text">I would be happy to further discuss my experiences with you, simply shoot me an email! :D</div>
             <a className="my_email" href="mailto:chindychristie@gmail.com">chindychristie@gmail.com</a>

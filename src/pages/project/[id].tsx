@@ -26,9 +26,11 @@ const ProjectDetail = () => {
                 <div className="top">
                     <h1>{EachProjectData[id-1].title}</h1>
                     <div className="subtitle">{EachProjectData[id-1].subtitle}</div>
-                    <video width="1000px" poster={EachProjectData[id-1].poster} controls>
-                        <source src={EachProjectData[id-1].video} type="video/mp4" />
-                    </video>
+                    <div className="videoContainer">
+                        <video poster={EachProjectData[id-1].poster} controls>
+                            <source src={EachProjectData[id-1].video} type="video/mp4" />
+                        </video>
+                    </div>
                 </div>
 
                 <section className="about">

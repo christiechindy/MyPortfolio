@@ -13,6 +13,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>
+                <a href="#contact_me" className='contactBtnFixed'>contact me.</a>
                 <Intro />
                 <Projects />
                 <Contact/>

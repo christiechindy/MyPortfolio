@@ -7,7 +7,7 @@ const Projects = () => {
             <div className="title">My projects.</div>
             <div className="project_container">
                 {EachProjectData.map((d) => (
-                    <ProjectItem id={d.id} title={d.title} texts={d.outline} img={d.laptop}/>
+                    <ProjectItem id={d.id} title={d.title} texts={d.outline} img={d.device}/>
                 ))}
             </div>
         </section>
