@@ -6,7 +6,7 @@ export const EachProjectData = [
         device: "/pc_chatapp.png",
         subtitle: "From concept to deployment, this real-time chat app epitomizes my end-to-end development capabilities, showcasing proficiency in front-end design, back-end logic, and seamless integration of technologies.",
         poster: "/poster_chatapp.jpg",
-        video: "/ChatApp.mp4",
+        video: "/ChatAppp.mp4",
         about: [
             "I've meticulously designed and developed this app to showcase my full-stack capabilities. With a passion for creating seamless user experiences, I crafted this chat app from the ground up, building the front-end using React for its intuitive interface and dynamic interactions. On the back-end, I leveraged the powerful combination of PostgreSQL, Express, Node.js, and incorporated Socket.IO for real-time messaging capabilities. To ensure secure user interactions, I implemented JWT (JSON Web Token) authentication, providing a robust authentication system. For seamless communication with the PostgreSQL database, I utilized Knex, a query builder for Node.js.",
             "This application allowed me to demonstrate my proficiency in both front-end design and back-end logic, as I meticulously coded every aspect, from the sleek UI to the efficient database interactions. I'm proud to present this project as an example of how my skills can be utilized to create efficient, secure, and user-friendly applications."
@@ -23,7 +23,7 @@ export const EachProjectData = [
         device: "/laptop_web_lecturers.png",
         subtitle: "This is my previous internship’s project. I developed the whole front-end and also work on a little part of the backend, which is the OCR and autofill features.",
         poster: "/poster_web_lecturers.jpg",
-        video: "/Lecturers_Archive.mp4",
+        video: "/Lecturers_Archivee.mp4",
         about: [
             "This website is designed to store archive documents of all lecturers in the Informatics Department at Hasanuddin University. Lecturers and admins can easily view, upload, edit, and delete their respective documents. Additionally, certain data menus implement OCR (Optical Character Recognition) technology, which extracts text from the uploaded documents. The extracted text is then processed using a custom Regex algorithm that I've developed through extensive experiments and research with various cover formats.",
             "Another standout feature is the CV generator, enabling users to effortlessly generate their CV based on their data in the system. The CVs are produced in .docx format, providing users with the flexibility to further customize their CV according to their preferences. The CV generator, along with the (Laravel) backend, was developed by my partner.",
@@ -41,7 +41,7 @@ export const EachProjectData = [
         device: "/laptop_web_students.png",
         subtitle: "This website, along with Lecturers' Archive System (both desktop and mobile interface), are my projects at my previous internship at Informatics Department, Hasanuddin University",
         poster: "/poster_web_students.jpg",
-        video: "/Students_Archive.mp4",
+        video: "/Students_Archivee.mp4",
         about: [
             "This website is designed to store contest data for all students in the Informatics Engineering department at Hasanuddin University. The contest data includes the name of the contest, the organizer, dates, documentation submitted by students, and their certificates.",
             "Students access this website through the Unhas SSO (Single Sign-On) for secure login. The data uploaded by students can be viewed by administrators on their dedicated admin website."
@@ -57,7 +57,7 @@ export const EachProjectData = [
         device: "/hp_carewe.png",
         subtitle: "",
         poster: "/poster_carewe.png",
-        video: "/CareweFin.mp4",
+        video: "/CareweFinn.mp4",
         about: [
             "This website has two user roles: RT and RW. RT users will fill out the monthly reports, while RW users will have the ability to check their submitted reports. Additionally, both roles can access the report histories, which display the points obtained and the status of incentives.",
             "Furthermore, we are developing a desktop version specifically for the admin role. The main dashboard will provide an overview to monitor all RT reports from all RW users, display the latest submitted reports, and track the progress of each report."
