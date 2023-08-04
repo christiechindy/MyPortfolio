@@ -241,14 +241,14 @@ section.contact .accounts {
     margin-bottom: 81px;
 }
 
-.project_details video {
-    max-width: 1000px;
-    max-height: 83vh;
+.project_details iframe {
+    width: 1000px;
+    height: 83vh;
     box-shadow: 0px 0px 25px 0px rgba(158, 0, 255, 0.70);
     transition: 0.3s ease-in-out;
 }
 
-.project_details video:hover {
+.project_details iframe:hover {
     box-shadow: 0px 0px 35px 0px rgba(158, 0, 255, 1.0);
 }
 

@@ -27,9 +27,7 @@ const ProjectDetail = () => {
                     <h1>{EachProjectData[id-1].title}</h1>
                     <div className="subtitle">{EachProjectData[id-1].subtitle}</div>
                     <div className="videoContainer">
-                        <video poster={EachProjectData[id-1].poster} controls>
-                            <source src={EachProjectData[id-1].video} type="video/mp4" />
-                        </video>
+                        <iframe src={`https://www.youtube.com/embed/${EachProjectData[id-1].video}`}></iframe>
                     </div>
                 </div>
 

@@ -1,0 +1,143 @@
+[debug] [2023-08-04T07:26:20.450Z] ----------------------------------------------------------------------
+[debug] [2023-08-04T07:26:20.453Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\LENOVO\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-08-04T07:26:20.454Z] CLI Version:   12.4.7
+[debug] [2023-08-04T07:26:20.454Z] Platform:      win32
+[debug] [2023-08-04T07:26:20.454Z] Node Version:  v16.15.1
+[debug] [2023-08-04T07:26:20.456Z] Time:          Fri Aug 04 2023 15:26:20 GMT+0800 (Central Indonesia Time)
+[debug] [2023-08-04T07:26:20.456Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-04T07:26:20.467Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-04T07:26:20.468Z] > authorizing via signed-in user (chindychristie@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\LENOVO\Documents\Full Stack Projects\PERN Stack\Portfolio\frontend
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-08-04T07:27:24.641Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-08-04T07:27:24.642Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"chindyportfolio","name":"chindyportfolio"}
+[debug] [2023-08-04T07:27:26.563Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2023-08-04T07:27:26.563Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.5227008931887089068"}
+[debug] [2023-08-04T07:27:26.565Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5227008931887089068 [none]
+[debug] [2023-08-04T07:27:27.897Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5227008931887089068 200
+[debug] [2023-08-04T07:27:27.898Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5227008931887089068 {"name":"operations/cp.5227008931887089068"}
+[debug] [2023-08-04T07:27:28.403Z] [Project Creation Poller] Retrying task index 0
+[debug] [2023-08-04T07:27:28.404Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5227008931887089068 [none]
+[debug] [2023-08-04T07:27:29.844Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5227008931887089068 200
+[debug] [2023-08-04T07:27:29.844Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5227008931887089068 {"name":"operations/cp.5227008931887089068","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"943182670118","projectId":"chindyportfolio","lifecycleState":"ACTIVE","name":"chindyportfolio","createTime":"2023-08-04T07:27:27.922Z"}}
+[debug] [2023-08-04T07:27:29.848Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/chindyportfolio:addFirebase [none]
+[debug] [2023-08-04T07:27:31.231Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/chindyportfolio:addFirebase 403
+[debug] [2023-08-04T07:27:31.232Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/chindyportfolio:addFirebase {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-08-04T07:27:31.232Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-08-04T07:27:31.409Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to add Firebase to Google Cloud Platform project. See firebase-debug.log for more info.
+[debug] [2023-08-04T07:27:52.244Z] ----------------------------------------------------------------------
+[debug] [2023-08-04T07:27:52.246Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\LENOVO\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-08-04T07:27:52.247Z] CLI Version:   12.4.7
+[debug] [2023-08-04T07:27:52.247Z] Platform:      win32
+[debug] [2023-08-04T07:27:52.247Z] Node Version:  v16.15.1
+[debug] [2023-08-04T07:27:52.248Z] Time:          Fri Aug 04 2023 15:27:52 GMT+0800 (Central Indonesia Time)
+[debug] [2023-08-04T07:27:52.249Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-04T07:27:52.258Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-04T07:27:52.259Z] > authorizing via signed-in user (chindychristie@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\LENOVO\Documents\Full Stack Projects\PERN Stack\Portfolio\frontend
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-08-04T07:30:54.784Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-08-04T07:30:54.784Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"myportfolio","name":"myportfolioo"}
+[debug] [2023-08-04T07:30:56.120Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2023-08-04T07:30:56.120Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2023-08-04T07:30:56.277Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at responseToError (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID myportfolio. Please try again with a unique project ID.
+[debug] [2023-08-04T07:32:31.490Z] ----------------------------------------------------------------------
+[debug] [2023-08-04T07:32:31.493Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\LENOVO\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-08-04T07:32:31.494Z] CLI Version:   12.4.7
+[debug] [2023-08-04T07:32:31.494Z] Platform:      win32
+[debug] [2023-08-04T07:32:31.494Z] Node Version:  v16.15.1
+[debug] [2023-08-04T07:32:31.496Z] Time:          Fri Aug 04 2023 15:32:31 GMT+0800 (Central Indonesia Time)
+[debug] [2023-08-04T07:32:31.496Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-04T07:32:31.515Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-04T07:32:31.516Z] > authorizing via signed-in user (chindychristie@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\LENOVO\Documents\Full Stack Projects\PERN Stack\Portfolio\frontend
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-08-04T07:33:15.165Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-08-04T07:33:15.166Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"ccdrrdpraru","name":"myportfolioweb"}
+[debug] [2023-08-04T07:33:16.637Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2023-08-04T07:33:16.637Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.4717123746751893875"}
+[debug] [2023-08-04T07:33:16.641Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.4717123746751893875 [none]
+[debug] [2023-08-04T07:33:18.002Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.4717123746751893875 200
+[debug] [2023-08-04T07:33:18.002Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.4717123746751893875 {"name":"operations/cp.4717123746751893875"}
+[debug] [2023-08-04T07:33:18.508Z] [Project Creation Poller] Retrying task index 0
+[debug] [2023-08-04T07:33:18.509Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.4717123746751893875 [none]
+[debug] [2023-08-04T07:33:19.813Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.4717123746751893875 200
+[debug] [2023-08-04T07:33:19.813Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.4717123746751893875 {"name":"operations/cp.4717123746751893875","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true}}
+[debug] [2023-08-04T07:33:20.828Z] [Project Creation Poller] Retrying task index 0
+[debug] [2023-08-04T07:33:20.828Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.4717123746751893875 [none]
+[debug] [2023-08-04T07:33:22.103Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.4717123746751893875 200
+[debug] [2023-08-04T07:33:22.103Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.4717123746751893875 {"name":"operations/cp.4717123746751893875","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"511294854786","projectId":"ccdrrdpraru","lifecycleState":"ACTIVE","name":"myportfolioweb","createTime":"2023-08-04T07:33:18.606Z"}}
+[debug] [2023-08-04T07:33:22.107Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/ccdrrdpraru:addFirebase [none]
+[debug] [2023-08-04T07:33:23.494Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/ccdrrdpraru:addFirebase 403
+[debug] [2023-08-04T07:33:23.494Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/ccdrrdpraru:addFirebase {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-08-04T07:33:23.496Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-08-04T07:33:23.660Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to add Firebase to Google Cloud Platform project. See firebase-debug.log for more info.
