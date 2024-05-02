@@ -55,7 +55,7 @@ body {
 }
 
 :root {
-    --purple: #9e00ff;
+    --purple: #8000FF;
 }
 
 section.intro {
@@ -65,12 +65,14 @@ section.intro {
     width: 100%;
     align-items: center;
     justify-content: center;
+    padding: 0 20px;
 }
 
 section.intro .name {
     font-size: 90px;
     font-weight: 700;
     margin-bottom: 40px;
+    text-align: center;
 }
 
 section.intro .name span {
@@ -113,9 +115,11 @@ section > .title {
     background-color: white;
 
     display: flex;
-    height: 99vh;
+    height: 100vh;
+    max-height: 100vh;
     align-items: center;
     justify-content: space-evenly;
+    gap: 30px;
     border-bottom: 2px solid #d6d6d6;
 }
 
@@ -305,4 +309,117 @@ section.stacks .texts {
 
 html {
     scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 48.625rem) {
+    .project_item {
+        flex-direction: column;
+    }
+
+    .project_item img {
+        max-width: 95vw;
+        max-height: 40vh;
+    }
+
+    section.contact {
+        height: 100vh;
+        margin: 0 13px;
+    }
+
+    .header .text {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .project_details h1 {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+
+    main.project_details {
+        padding: 0 20px;
+    }
+
+    .project_details .subtitle {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    section.contact, section.about, section.stacks, .project_item, section.projects > .title {
+        padding: 0 3%;
+    }
+
+    .top ~ section .title {
+        font-size: 36px;
+    }
+
+    section.about .text p {
+        font-size: 15px;
+        line-height: 28px;
+    }
+
+    section.stacks .texts {
+        font-size: 18px;
+    }
+
+    .project_details .top {
+        margin-bottom: 30px;
+    }
+
+    .project_details iframe {
+        height: 50vh;
+    }
+
+    .project_item .texts {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 39rem) {
+    section.intro .name {
+        font-size: 62px;
+        line-height: 1.2;
+    }
+
+    section.intro .name span {
+        font-size: 85px;
+    }
+
+    section.intro .info {
+        font-size: 16px;
+        line-height: 29px;
+    }
+
+    section.projects .title {
+        font-size: 40px;
+    }
+
+    .project_item .texts .title {
+        font-size: 22px;
+        text-align: center;
+        margin: 0 13px;
+    }
+
+    .project_item .texts p {
+        font-size: 15px;
+        text-align: center;
+        line-height: 27px;
+        margin: 0 13px;
+    }
+
+    section > .title {
+        font-size: 42px;
+    }
+
+    section.contact .text {
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+    section.contact .my_email {
+        font-size: 20px;
+    }
 }
