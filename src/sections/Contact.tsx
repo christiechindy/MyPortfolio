@@ -11,7 +11,7 @@ const Contact = () => {
             <div className="accounts">
                 <a href="mailto:chindychristie@gmail.com"><Email_Icon /></a>
                 <a target="_blank" rel="noopener noreferrer" href="https://github.com/christiechindy"><Github_Icon/></a>
-                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/chindychristie/"><Linkedin_Icon /></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/chindy-christie-davina/"><Linkedin_Icon /></a>
             </div>
         </section>
     )
